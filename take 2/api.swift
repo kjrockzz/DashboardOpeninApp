@@ -50,46 +50,6 @@ enum TimesAgo: String, Decodable {
 }
 
 
-//
-//func fetchdata()async throws -> Schema{
-//    let url = URL(string: "https://api.inopenapp.com/api/v1/dashboardNew")!
-//    let (data, _)     = try await URLSession.shared.data(from: url)
-//    let decoded =     try JSONDecoder().decode(Schema.self, from: data)
-//    return decoded
-//}
-
-
-
-//func fetchData() async throws -> Schema {
-//    // URL of the API
-//    guard let url = URL(string: "https://api.inopenapp.com/api/v1/dashboardNew") else {
-//        throw URLError(.badURL)
-//    }
-//
-//    // Create the URLRequest object
-//    var request = URLRequest(url: url)
-//
-//    // Set the HTTP method to GET (or POST, PUT, DELETE, etc., depending on your requirements)
-//    request.httpMethod = "GET"
-//
-//
-//    request.addValue("Bearer "+token, forHTTPHeaderField: "Authorization")
-//
-//    // Make the API call
-//    let (data, response) = try await URLSession.shared.data(for: request)
-//
-//    // Check the response (assuming a typical HTTP response)
-//    guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
-//        // If the status code is not in the 200 range, throw an error
-//        throw URLError(.badServerResponse)
-//    }
-//
-//    // Decode the JSON data to the `Schema` model
-//    let decoded = try JSONDecoder().decode(Schema.self, from: data)
-//    return decoded
-//}
-//
-
 
 import SwiftUI
 
